@@ -3,6 +3,7 @@
 // Imports dependencies and set up http server
 const
 	PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN,
+	request = require('request'),
   express = require('express'),
   bodyParser = require('body-parser'),
   app = express().use(bodyParser.json()); // creates express http server
